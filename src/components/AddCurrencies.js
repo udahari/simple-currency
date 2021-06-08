@@ -18,7 +18,7 @@ function AddCurrencies({addCurrency, activeCurrencies, setShowDropdown}) {
     inActiveCurrencies[0],
   )
 
-  if (inActiveCurrencies.length == 0) {
+  if (inActiveCurrencies.length === 0) {
     return (
       <p data-testid="all-currencies-selected" className="add-more-button">
         All the currencies have been selected
