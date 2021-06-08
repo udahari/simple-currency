@@ -25,3 +25,20 @@ test('can choose currency', async () => {
   expect(addCurrency).toHaveBeenCalledTimes(1)
   expect(addCurrency).toHaveBeenCalledWith('CAD')
 })
+
+test("can't select currency if all selected", async () => {
+  let activeCurrencies = [
+    'CAD',
+    'CHF',
+    'GBP',
+    'IDR',
+    'INR',
+    'JPY',
+    'KRW',
+    'MYR',
+    'SGD',
+    'USD',
+  ]
+  render(<AddCurrencies activeCurrencies={activeCurrencies} />)
+  expect(screen.getByText('All the currencies have been selected'))
+})
