@@ -35,7 +35,7 @@ function AddCurrencies({addCurrency, activeCurrencies, setShowDropdown}) {
         value={choosenCurrency}
       >
         {inActiveCurrencies.map(val => (
-          <option value={val} key={val}>
+          <option value={val} key={val} data-testid={`currency-${val}`}>
             {val}
           </option>
         ))}
