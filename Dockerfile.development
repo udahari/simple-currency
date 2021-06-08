@@ -1,0 +1,8 @@
+FROM node:13.14-alpine
+
+WORKDIR /app
+COPY package.json ./
+
+RUN npm install --ignore-script
+COPY . .
+CMD [ "npm", "start" ]
