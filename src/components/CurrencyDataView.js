@@ -6,7 +6,8 @@ function CurrencyDataView({currency, currentValue = 0, base, removeCurrency}) {
   let fullName = getFullName[symbol]
   rate = parseFloat(rate).toFixed(3)
   currentValue = parseFloat(currentValue)
-  let totalConvert = parseFloat(rate * currentValue).toFixed(3)
+  let sumConvert = parseFloat(rate * currentValue)
+  let totalConvert = sumConvert % 1 === 0 ? sumConvert : sumConvert.toFixed(3)
 
   return (
     <div
