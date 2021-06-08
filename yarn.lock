@@ -6541,6 +6541,14 @@
   "resolved" "https://registry.npmjs.org/is-callable/-/is-callable-1.2.3.tgz"
   "version" "1.2.3"
 
+"is-ci-cli@^2.2.0":
+  "integrity" "sha512-Xg97ZGDzU0a9gPTAli+TNegMk+PI3x0KLRYCfBa2LAboF1YyuA03Gwdc9vpu3VRNU+lFFNkvXnIQuJ0PgB120Q=="
+  "resolved" "https://registry.npmjs.org/is-ci-cli/-/is-ci-cli-2.2.0.tgz"
+  "version" "2.2.0"
+  dependencies:
+    "cross-spawn" "^7.0.0"
+    "is-ci" "^2.0.0"
+
 "is-ci@^2.0.0", "is-ci@2.0.0":
   "integrity" "sha512-YfJT7rkpQB0updsdHLGWrvhBJfcfzNNawYDNIyQXJz0IViGf75O8EBPKSdvw2rF+LGCsX4FZ8tcr3b19LcZq4w=="
   "resolved" "https://registry.npmjs.org/is-ci/-/is-ci-2.0.0.tgz"
