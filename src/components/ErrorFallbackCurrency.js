@@ -1,17 +1,9 @@
 import React from 'react'
 
-function ErrorFallback({error, removeCurrency, resetErrorBoundary}) {
+function ErrorFallback({error, removeCurrency}) {
   return (
     <div className="p-2 flex flex-col space-y-2 border border-px border-black mb-4">
-      <div className="flex justify-between">
-        There was an error:{' '}
-        <span
-          onClick={resetErrorBoundary}
-          className="items-center font-normal cursor-pointer"
-        >
-          Try Again
-        </span>
-      </div>
+      There was an error:{' '}
       <div className="flex justify-between">
         <pre style={{whiteSpace: 'normal'}}>{error.message}</pre>
         <span
